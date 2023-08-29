@@ -9,10 +9,10 @@
 </div>
 
 <div class="h-screen z-10">
-    <div class="h-4/5 flex">
+    <div class="h-4/5 flex flex-col sm:flex-row">
         <livewire:tasks-board />
         
-        <div class="w-1/2 p-4 ">
+        <div class=" w-full sm:w-1/2 p-4 ">
             <livewire:priority-board />
             
             <livewire:to-do-board />

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PurchasesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth')->group(function () {
 
-    // Route::get('/home', [DashboardController::class, 'home']);
+    Route::resource('/purchases', PurchasesController::class);
     // Route::get('/calendar', [DashboardController::class, 'calendar']);
     Route::get('/calendar/{date}/plan', [DashboardController::class, 'dailyPlan']);
     Route::post('/calendar/{date}/create', [DashboardController::class, 'createNewTask']);

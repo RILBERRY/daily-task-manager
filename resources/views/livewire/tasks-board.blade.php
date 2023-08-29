@@ -1,4 +1,4 @@
-<div class="w-1/2 p-4 ">
+<div class=" w-full sm:w-1/2 p-4 ">
     <div class="mb-4">
         <div class="flex justify-between">
             <h2 class="text-lg font-bold text-gray-600">My Tasks</h2>
